@@ -1,0 +1,1459 @@
+Found a 21 line (145 tokens) duplication in the following files: 
+Starting at line 111 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Trabajos.java
+Starting at line 135 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Trabajos.java
+
+			if(Coche.getCoche().get(j).getMatricula().equalsIgnoreCase(matricula)) {
+				id = (JOptionPane.showInputDialog(null, "Escriba el id del trabajo: "));
+				for(int i=0;i<trabajo.size();i++) {
+					if(trabajo.get(i).getId().equals(id)) {
+						salida+=("EL TRABAJO YA EXISTE!!!");
+					}
+else{
+				tipoTrabajo = JOptionPane.showInputDialog(null, "Indique de que tipo es el trabajo: ");
+				descripcion = JOptionPane.showInputDialog(null, "Escriba su descripcion: ");
+				precio= Float.parseFloat(JOptionPane.showInputDialog(null, "Escriba el precio del trabajo: "));
+				estado = JOptionPane.showInputDialog(null, "Escriba si el trabajo esta en proceso o ha sido finalizado: ");
+				
+				trabajo.add(new Trabajos(id,matricula,tipoTrabajo,descripcion,precio,estado));
+				break;
+				
+}}
+				
+				}
+				break;
+				
+				case 2:
+=====================================================================
+Found a 19 line (144 tokens) duplication in the following files: 
+Starting at line 111 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Trabajos.java
+Starting at line 135 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Trabajos.java
+Starting at line 159 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Trabajos.java
+
+			if(Coche.getCoche().get(j).getMatricula().equalsIgnoreCase(matricula)) {
+				id = (JOptionPane.showInputDialog(null, "Escriba el id del trabajo: "));
+				for(int i=0;i<trabajo.size();i++) {
+					if(trabajo.get(i).getId().equals(id)) {
+						salida+=("EL TRABAJO YA EXISTE!!!");
+					}
+else{
+				tipoTrabajo = JOptionPane.showInputDialog(null, "Indique de que tipo es el trabajo: ");
+				descripcion = JOptionPane.showInputDialog(null, "Escriba su descripcion: ");
+				precio= Float.parseFloat(JOptionPane.showInputDialog(null, "Escriba el precio del trabajo: "));
+				estado = JOptionPane.showInputDialog(null, "Escriba si el trabajo esta en proceso o ha sido finalizado: ");
+				
+				trabajo.add(new Trabajos(id,matricula,tipoTrabajo,descripcion,precio,estado));
+				break;
+				
+}}
+				
+				}
+				break;
+=====================================================================
+Found a 18 line (111 tokens) duplication in the following files: 
+Starting at line 118 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionClientes.java
+Starting at line 117 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionJefes.java
+
+		JLabel lblGestionarCliente = new JLabel("GESTIONAR CLIENTE");
+		lblGestionarCliente.setFont(new Font("Sylfaen", Font.PLAIN, 15));
+		lblGestionarCliente.setBounds(138, 11, 157, 14);
+		frame.getContentPane().add(lblGestionarCliente);
+		
+		JButton btnAtrs = new JButton("Volver");
+		btnAtrs.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				GestionPersonas ventana = new GestionPersonas();
+				ventana.main(null);
+				frame.dispose();
+			}
+		});
+		btnAtrs.setBounds(166, 210, 89, 23);
+		frame.getContentPane().add(btnAtrs);
+	}
+}
+=====================================================================
+Found a 15 line (93 tokens) duplication in the following files: 
+Starting at line 96 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionPersonas.java
+Starting at line 84 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionVehiculos.java
+
+		JLabel lblGestionDePersionas = new JLabel("GESTION DE PERSONAS");
+		lblGestionDePersionas.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblGestionDePersionas.setBounds(120, 23, 209, 23);
+		frame.getContentPane().add(lblGestionDePersionas);
+		
+		JButton btnMenuPrincipal = new JButton("Menu Principal");
+		btnMenuPrincipal.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				PrincipalInterfaz ventana = new PrincipalInterfaz();
+				ventana.main(null);
+				frame.dispose();
+			}
+		});
+		btnMenuPrincipal.setBounds(134, 210, 153, 23);
+=====================================================================
+Found a 16 line (85 tokens) duplication in the following files: 
+Starting at line 120 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionClientes.java
+Starting at line 118 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionComercial.java
+Starting at line 119 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionJefes.java
+Starting at line 119 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMecanico.java
+
+		lblGestionarCliente.setBounds(138, 11, 157, 14);
+		frame.getContentPane().add(lblGestionarCliente);
+		
+		JButton btnAtrs = new JButton("Volver");
+		btnAtrs.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				GestionPersonas ventana = new GestionPersonas();
+				ventana.main(null);
+				frame.dispose();
+			}
+		});
+		btnAtrs.setBounds(166, 210, 89, 23);
+		frame.getContentPane().add(btnAtrs);
+	}
+}
+=====================================================================
+Found a 16 line (85 tokens) duplication in the following files: 
+Starting at line 120 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionCoches.java
+Starting at line 120 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionFurgonetas.java
+Starting at line 120 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMotos.java
+
+		lblGestionarCliente.setBounds(138, 11, 183, 14);
+		frame.getContentPane().add(lblGestionarCliente);
+		
+		JButton btnAtrs = new JButton("Volver");
+		btnAtrs.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				GestionVehiculos ventana = new GestionVehiculos();
+				ventana.main(null);
+				frame.dispose();
+			}
+		});
+		btnAtrs.setBounds(166, 210, 89, 23);
+		frame.getContentPane().add(btnAtrs);
+	}
+}
+=====================================================================
+Found a 12 line (85 tokens) duplication in the following files: 
+Starting at line 419 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+Starting at line 243 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Trabajos.java
+
+			JScrollPane scrollPane = new JScrollPane(new JLabel(salida));
+	        scrollPane.setPreferredSize(new Dimension(400,300));
+	        Object message = scrollPane;
+	        
+
+	        JTextArea textArea = new JTextArea(salida);
+	        textArea.setLineWrap(true);
+	        textArea.setWrapStyleWord(true);
+	        textArea.setMargin(new Insets(15,15,15,15));
+	        scrollPane.getViewport().setView(textArea);
+	        message = scrollPane;
+	        JOptionPane.showMessageDialog(null, message);
+=====================================================================
+Found a 15 line (83 tokens) duplication in the following files: 
+Starting at line 44 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionCoches.java
+Starting at line 44 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionFurgonetas.java
+
+	public GestionCoches() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		Vehiculos v = new Vehiculos("","","",0,"","",0,"",0,"","");
+		frame = new JFrame();
+		frame.setBounds(100, 100, 450, 300);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JButton btnAltaCliente = new JButton("Alta Coche");
+=====================================================================
+Found a 9 line (74 tokens) duplication in the following files: 
+Starting at line 171 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+Starting at line 192 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+Starting at line 214 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+
+					salida+=("EL JEFE YA EXISTE!!!");
+				}
+else{
+			nombre=JOptionPane.showInputDialog(null, "Escriba el nombre: ");
+			apellido=JOptionPane.showInputDialog(null, "Escriba el apellido: ");
+			dni=JOptionPane.showInputDialog(null, "Escriba el dni: ");
+			calle=JOptionPane.showInputDialog(null, "Escriba la calle: ");
+			numeroCasa=Integer.parseInt(JOptionPane.showInputDialog(null, "Escriba el numero de casa: "));
+			codigoPostal=Integer.parseInt(JOptionPane.showInputDialog(null, "Indique el codigo postal: "));
+=====================================================================
+Found a 15 line (73 tokens) duplication in the following files: 
+Starting at line 43 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionClientes.java
+Starting at line 42 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionComercial.java
+Starting at line 43 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionJefes.java
+Starting at line 43 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMecanico.java
+
+	public GestionClientes() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		Personas p = new Personas(null,null,null,null,0,0);
+		frame = new JFrame();
+		frame.setBounds(100, 100, 450, 300);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JButton btnAltaCliente = new JButton("Alta cliente");
+=====================================================================
+Found a 15 line (73 tokens) duplication in the following files: 
+Starting at line 45 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionTrabajos.java
+Starting at line 45 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionTrabajosAlta.java
+
+	public GestionTrabajos() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		Trabajos t = new Trabajos(null,null,null,null,0,null);
+		frame = new JFrame();
+		frame.setBounds(100, 100, 450, 300);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JButton btnAltaCliente = new JButton("Alta Trabajos");
+=====================================================================
+Found a 9 line (66 tokens) duplication in the following files: 
+Starting at line 118 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionClientes.java
+Starting at line 117 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionJefes.java
+Starting at line 118 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMotos.java
+
+		JLabel lblGestionarCliente = new JLabel("GESTIONAR CLIENTE");
+		lblGestionarCliente.setFont(new Font("Sylfaen", Font.PLAIN, 15));
+		lblGestionarCliente.setBounds(138, 11, 157, 14);
+		frame.getContentPane().add(lblGestionarCliente);
+		
+		JButton btnAtrs = new JButton("Volver");
+		btnAtrs.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+=====================================================================
+Found a 9 line (66 tokens) duplication in the following files: 
+Starting at line 118 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionCoches.java
+Starting at line 117 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMecanico.java
+
+		JLabel lblGestionarCliente = new JLabel("GESTIONAR VEHICULO");
+		lblGestionarCliente.setFont(new Font("Sylfaen", Font.PLAIN, 15));
+		lblGestionarCliente.setBounds(138, 11, 183, 14);
+		frame.getContentPane().add(lblGestionarCliente);
+		
+		JButton btnAtrs = new JButton("Volver");
+		btnAtrs.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+=====================================================================
+Found a 8 line (65 tokens) duplication in the following files: 
+Starting at line 243 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+Starting at line 268 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+Starting at line 293 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+Starting at line 320 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+
+				if(cliente.get(j).getDni().equals(dniCliente)) {
+			nombre = JOptionPane.showInputDialog(null, "Modificar nombre\n");
+			apellido=JOptionPane.showInputDialog(null, "Modificar apellido\n");
+			calle=JOptionPane.showInputDialog(null, "Modificar calle\n");
+			numeroCasa=Integer.parseInt(JOptionPane.showInputDialog(null, "Modificar numero de casa\n"));
+			codigoPostal=Integer.parseInt(JOptionPane.showInputDialog(null, "Modificar codigo postal\n"));
+			
+			for(Cliente m: cliente) {
+=====================================================================
+Found a 10 line (64 tokens) duplication in the following files: 
+Starting at line 52 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionCoches.java
+Starting at line 53 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionTrabajosAlta.java
+
+		Vehiculos v = new Vehiculos("","","",0,"","",0,"",0,"","");
+		frame = new JFrame();
+		frame.setBounds(100, 100, 450, 300);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JButton btnAltaCliente = new JButton("Alta Coche");
+		btnAltaCliente.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+=====================================================================
+Found a 6 line (61 tokens) duplication in the following files: 
+Starting at line 227 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+Starting at line 257 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+
+			marca = JOptionPane.showInputDialog(null, "Escriba la marca de la moto: ");
+			capacidadMotor = Integer.parseInt(JOptionPane.showInputDialog(null, "Indique la capacidad del motor: "));
+			tipoCombustible = JOptionPane.showInputDialog(null, "Indique el tipo de combustible: ");
+			numeroPasajeros = Integer.parseInt(JOptionPane.showInputDialog(null, "Indique el numero de pasajeros: "));
+			ABS = (JOptionPane.showInputDialog(null, "Indique si tiene ABS: "));
+			estadoVehiculo = JOptionPane.showInputDialog(null, "Indique el estado de la moto: ");
+=====================================================================
+Found a 12 line (56 tokens) duplication in the following files: 
+Starting at line 61 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionClientes.java
+Starting at line 62 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionCoches.java
+
+				p.alta(1);
+			}
+		});
+		btnAltaCliente.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+			}
+		});
+		btnAltaCliente.setBounds(10, 56, 118, 23);
+		frame.getContentPane().add(btnAltaCliente);
+		
+		JButton btnModificarCliente = new JButton("Modificar Cliente");
+=====================================================================
+Found a 12 line (56 tokens) duplication in the following files: 
+Starting at line 62 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionFurgonetas.java
+Starting at line 61 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMecanico.java
+
+				v.alta(3);
+			}
+		});
+		btnAltaCliente.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+			}
+		});
+		btnAltaCliente.setBounds(10, 56, 118, 23);
+		frame.getContentPane().add(btnAltaCliente);
+		
+		JButton btnModificarCliente = new JButton("Modificar Furgoneta");
+=====================================================================
+Found a 12 line (56 tokens) duplication in the following files: 
+Starting at line 61 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionJefes.java
+Starting at line 62 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMotos.java
+
+				p.alta(2);
+			}
+		});
+		btnAltaCliente.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+			}
+		});
+		btnAltaCliente.setBounds(10, 56, 118, 23);
+		frame.getContentPane().add(btnAltaCliente);
+		
+		JButton btnModificarCliente = new JButton("Modificar Jefe");
+=====================================================================
+Found a 15 line (56 tokens) duplication in the following files: 
+Starting at line 105 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionTrabajos.java
+Starting at line 92 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionTrabajosAlta.java
+
+		frame.getContentPane().add(btnListarClientes);
+		
+		JButton btnGuardar = new JButton("Guardar");
+		btnGuardar.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				try {
+					t.guardarHistorial(0);
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		});
+		btnGuardar.setBounds(69, 134, 118, 23);
+=====================================================================
+Found a 11 line (55 tokens) duplication in the following files: 
+Starting at line 97 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionFurgonetas.java
+Starting at line 101 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionTrabajos.java
+
+				v.listar(3);
+			}
+		});
+		btnListarClientes.setBounds(246, 134, 131, 23);
+		frame.getContentPane().add(btnListarClientes);
+		
+		JButton btnGuardar = new JButton("Guardar");
+		btnGuardar.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				try {
+=====================================================================
+Found a 14 line (55 tokens) duplication in the following files: 
+Starting at line 35 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionPersonas.java
+Starting at line 35 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionVehiculos.java
+
+	public GestionPersonas() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(100, 100, 450, 300);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JButton btnGestionarClientes = new JButton("Gestionar Clientes");
+=====================================================================
+Found a 7 line (55 tokens) duplication in the following files: 
+Starting at line 53 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionTrabajos.java
+Starting at line 53 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionTrabajosAlta.java
+Starting at line 52 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\PrincipalInterfaz.java
+
+		Trabajos t = new Trabajos(null,null,null,null,0,null);
+		frame = new JFrame();
+		frame.setBounds(100, 100, 450, 300);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JButton btnAltaCliente = new JButton("Alta Trabajos");
+=====================================================================
+Found a 5 line (55 tokens) duplication in the following files: 
+Starting at line 187 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+Starting at line 262 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+
+		tipo = (String) JOptionPane.showInputDialog(null, "Seleccione el motivo de la visita", "Motivo", JOptionPane.DEFAULT_OPTION,  null, motivos, motivos[0]);
+		numeroPuertas = Integer.parseInt(JOptionPane.showInputDialog(null, "Indique el numero de puertas: "));
+		capacidadAlmacenamiento = Integer.parseInt(JOptionPane.showInputDialog(null, "Indique la capacidad de almacenamiento: "));
+		GPS = (JOptionPane.showInputDialog(null, "Indique si tiene GPS: "));
+		sistemaClimatizacion = (JOptionPane.showInputDialog(null, "Indique si tiene sistema de climatizacion: "));
+=====================================================================
+Found a 12 line (52 tokens) duplication in the following files: 
+Starting at line 61 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionClientes.java
+Starting at line 62 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionCoches.java
+Starting at line 60 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionComercial.java
+Starting at line 62 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionFurgonetas.java
+Starting at line 61 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionJefes.java
+Starting at line 61 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMecanico.java
+Starting at line 62 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMotos.java
+Starting at line 65 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionTrabajos.java
+
+				p.alta(1);
+			}
+		});
+		btnAltaCliente.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+			}
+		});
+		btnAltaCliente.setBounds(10, 56, 118, 23);
+		frame.getContentPane().add(btnAltaCliente);
+		
+		JButton btnModificarCliente = new JButton("Modificar Cliente");
+=====================================================================
+Found a 4 line (52 tokens) duplication in the following files: 
+Starting at line 173 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+Starting at line 210 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+Starting at line 240 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+
+		dniCliente = JOptionPane.showInputDialog(null, "Escriba el dni del dueño del coche: ");
+		for(int j=0;j<Cliente.getCliente().size();j++)
+			if(Cliente.getCliente().get(j).getDni().equalsIgnoreCase(dniCliente)) {
+		matricula = JOptionPane.showInputDialog(null, "Escriba la matricula del coche: ");
+=====================================================================
+Found a 8 line (51 tokens) duplication in the following files: 
+Starting at line 248 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Trabajos.java
+Starting at line 430 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+
+        JTextArea textArea = new JTextArea(salida);
+        textArea.setLineWrap(true);
+        textArea.setWrapStyleWord(true);
+        textArea.setMargin(new Insets(15,15,15,15));
+        scrollPane.getViewport().setView(textArea);
+        message = scrollPane;
+        JOptionPane.showMessageDialog(null, message);
+}
+=====================================================================
+Found a 9 line (50 tokens) duplication in the following files: 
+Starting at line 100 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionCoches.java
+Starting at line 100 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMotos.java
+
+		btnListarClientes.setBounds(253, 134, 118, 23);
+		frame.getContentPane().add(btnListarClientes);
+		
+		JButton btnGuardar = new JButton("Guardar");
+		btnGuardar.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				try {
+					v.guardarHistorial(1);
+=====================================================================
+Found a 7 line (50 tokens) duplication in the following files: 
+Starting at line 424 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+Starting at line 430 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+
+	        JTextArea textArea = new JTextArea(salida);
+	        textArea.setLineWrap(true);
+	        textArea.setWrapStyleWord(true);
+	        textArea.setMargin(new Insets(15,15,15,15));
+	        scrollPane.getViewport().setView(textArea);
+	        message = scrollPane;
+	        JOptionPane.showMessageDialog(null, message);
+=====================================================================
+Found a 7 line (50 tokens) duplication in the following files: 
+Starting at line 453 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+Starting at line 465 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+
+	        JTextArea textArea2 = new JTextArea(salida2);
+	        textArea2.setLineWrap(true);
+	        textArea2.setWrapStyleWord(true);
+	        textArea2.setMargin(new Insets(15,15,15,15));
+	        scrollPane2.getViewport().setView(textArea2);
+	        message2 = scrollPane2;
+	        JOptionPane.showMessageDialog(null, message2);
+=====================================================================
+Found a 7 line (50 tokens) duplication in the following files: 
+Starting at line 481 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+Starting at line 504 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+
+	        JTextArea textArea3 = new JTextArea(salida3);
+	        textArea3.setLineWrap(true);
+	        textArea3.setWrapStyleWord(true);
+	        textArea3.setMargin(new Insets(15,15,15,15));
+	        scrollPane3.getViewport().setView(textArea3);
+	        message3 = scrollPane3;
+	        JOptionPane.showMessageDialog(null, message3);
+=====================================================================
+Found a 3 line (50 tokens) duplication in the following files: 
+Starting at line 224 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+Starting at line 254 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+
+    String resp = (String) JOptionPane.showInputDialog(null, "Seleccione el motivo de la visita", "Motivo", JOptionPane.DEFAULT_OPTION,  null, motivos, motivos[0]);
+			anyoEntradaTaller = Integer.parseInt(JOptionPane.showInputDialog(null, "Escriba el anyo de entrada al taller: "));
+			modelo = JOptionPane.showInputDialog(null, "Escriba el modelo de la moto: ");
+=====================================================================
+Found a 16 line (47 tokens) duplication in the following files: 
+Starting at line 29 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Coche.java
+Starting at line 46 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Furgoneta.java
+
+	}
+	
+
+	
+	public int getNumeroPuertas() {
+		return numeroPuertas;
+	}
+	public void setNumeroPuertas(int numeroPuertas) {
+		this.numeroPuertas = numeroPuertas;
+	}
+	public int getCapacidadAlmacenamiento() {
+		return capacidadAlmacenamiento;
+	}
+	public void setCapacidadAlmacenamiento(int capacidadAlmacenamiento) {
+		this.capacidadAlmacenamiento = capacidadAlmacenamiento;
+	}
+=====================================================================
+Found a 8 line (46 tokens) duplication in the following files: 
+Starting at line 100 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionCoches.java
+Starting at line 99 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionJefes.java
+Starting at line 100 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMotos.java
+
+		btnListarClientes.setBounds(253, 134, 118, 23);
+		frame.getContentPane().add(btnListarClientes);
+		
+		JButton btnGuardar = new JButton("Guardar");
+		btnGuardar.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				try {
+=====================================================================
+Found a 9 line (46 tokens) duplication in the following files: 
+Starting at line 100 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionCoches.java
+Starting at line 100 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionFurgonetas.java
+Starting at line 100 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMotos.java
+
+		btnListarClientes.setBounds(253, 134, 118, 23);
+		frame.getContentPane().add(btnListarClientes);
+		
+		JButton btnGuardar = new JButton("Guardar");
+		btnGuardar.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				try {
+					v.guardarHistorial(1);
+=====================================================================
+Found a 9 line (46 tokens) duplication in the following files: 
+Starting at line 98 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionComercial.java
+Starting at line 99 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionJefes.java
+Starting at line 99 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMecanico.java
+
+		btnListarClientes.setBounds(243, 134, 158, 23);
+		frame.getContentPane().add(btnListarClientes);
+		
+		JButton btnGuardar = new JButton("Guardar");
+		btnGuardar.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				try {
+					p.guardarHistorial(4);
+=====================================================================
+Found a 14 line (46 tokens) duplication in the following files: 
+Starting at line 44 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Coche.java
+Starting at line 26 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Furgoneta.java
+
+	}
+	public String getGPS() {
+		return GPS;
+	}
+	public void setGPS(String gPS) {
+		GPS = gPS;
+	}
+	public String getSistemaClimatizacion() {
+		return sistemaClimatizacion;
+	}
+	public void setSistemaClimatizacion(String sistemaClimatizacion) {
+		this.sistemaClimatizacion = sistemaClimatizacion;
+	}
+	public String getDescapotable() {
+=====================================================================
+Found a 11 line (45 tokens) duplication in the following files: 
+Starting at line 108 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionFurgonetas.java
+Starting at line 112 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionTrabajos.java
+
+					v.guardarHistorial(3);
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		});
+		btnGuardar.setBounds(69, 134, 118, 23);
+		frame.getContentPane().add(btnGuardar);
+		
+		JLabel lblGestionarCliente = new JLabel("GESTIONAR FURGONETAS");
+=====================================================================
+Found a 7 line (45 tokens) duplication in the following files: 
+Starting at line 52 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMotos.java
+Starting at line 53 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionTrabajos.java
+Starting at line 53 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionTrabajosAlta.java
+
+		Vehiculos v = new Vehiculos(null,null,null,0,null,null,0,null,0,null,null);
+		frame = new JFrame();
+		frame.setBounds(100, 100, 450, 300);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JButton btnAltaCliente = new JButton("Alta Moto");
+=====================================================================
+Found a 7 line (44 tokens) duplication in the following files: 
+Starting at line 120 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionFurgonetas.java
+Starting at line 124 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionTrabajos.java
+
+		lblGestionarCliente.setBounds(110, 11, 203, 14);
+		frame.getContentPane().add(lblGestionarCliente);
+		
+		JButton btnAtrs = new JButton("Volver");
+		btnAtrs.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+=====================================================================
+Found a 22 line (44 tokens) duplication in the following files: 
+Starting at line 628 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+Starting at line 600 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+
+		            fis4.close();
+		            
+		            
+		        } 
+		        catch (IOException ioe) 
+		        {
+		            ioe.printStackTrace();
+		            return;
+		        } 
+		        catch (ClassNotFoundException c) 
+		        {
+		            System.out.println("Class not found");
+		            c.printStackTrace();
+		            return;
+		        }		         
+		
+}
+	
+
+///Redefinicion del metodo compare incluido en la interfaz Comparator
+@Override
+public int compare(Personas o1, Personas o2) {
+=====================================================================
+Found a 7 line (43 tokens) duplication in the following files: 
+Starting at line 51 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionClientes.java
+Starting at line 52 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionCoches.java
+Starting at line 50 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionComercial.java
+Starting at line 52 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionFurgonetas.java
+Starting at line 51 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionJefes.java
+Starting at line 51 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMecanico.java
+Starting at line 52 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMotos.java
+Starting at line 53 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionTrabajos.java
+Starting at line 53 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionTrabajosAlta.java
+
+		Personas p = new Personas(null,null,null,null,0,0);
+		frame = new JFrame();
+		frame.setBounds(100, 100, 450, 300);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JButton btnAltaCliente = new JButton("Alta cliente");
+=====================================================================
+Found a 5 line (43 tokens) duplication in the following files: 
+Starting at line 195 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+Starting at line 227 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+Starting at line 257 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+
+		marca = JOptionPane.showInputDialog(null, "Escriba la marca del coche: ");
+		capacidadMotor = Integer.parseInt(JOptionPane.showInputDialog(null, "Indique la capacidad del motor: "));
+		tipoCombustible = JOptionPane.showInputDialog(null, "Indique el tipo de combustible: ");
+		numeroPasajeros = Integer.parseInt(JOptionPane.showInputDialog(null, "Indique el numero de pasajeros: "));
+		ABS = JOptionPane.showInputDialog(null, "Indique si tiene ABS: ");
+=====================================================================
+Found a 8 line (42 tokens) duplication in the following files: 
+Starting at line 100 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionCoches.java
+Starting at line 98 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionComercial.java
+Starting at line 100 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionFurgonetas.java
+Starting at line 99 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionJefes.java
+Starting at line 99 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMecanico.java
+Starting at line 100 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMotos.java
+Starting at line 104 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionTrabajos.java
+
+		btnListarClientes.setBounds(253, 134, 118, 23);
+		frame.getContentPane().add(btnListarClientes);
+		
+		JButton btnGuardar = new JButton("Guardar");
+		btnGuardar.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				try {
+=====================================================================
+Found a 7 line (40 tokens) duplication in the following files: 
+Starting at line 120 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionClientes.java
+Starting at line 120 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionCoches.java
+Starting at line 118 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionComercial.java
+Starting at line 120 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionFurgonetas.java
+Starting at line 119 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionJefes.java
+Starting at line 119 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMecanico.java
+Starting at line 120 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMotos.java
+Starting at line 124 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionTrabajos.java
+Starting at line 111 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionTrabajosAlta.java
+
+		lblGestionarCliente.setBounds(138, 11, 157, 14);
+		frame.getContentPane().add(lblGestionarCliente);
+		
+		JButton btnAtrs = new JButton("Volver");
+		btnAtrs.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+=====================================================================
+Found a 9 line (40 tokens) duplication in the following files: 
+Starting at line 127 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionClientes.java
+Starting at line 127 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionCoches.java
+Starting at line 125 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionComercial.java
+Starting at line 127 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionFurgonetas.java
+Starting at line 126 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionJefes.java
+Starting at line 126 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMecanico.java
+Starting at line 127 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMotos.java
+Starting at line 131 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionTrabajos.java
+Starting at line 118 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionTrabajosAlta.java
+
+				GestionPersonas ventana = new GestionPersonas();
+				ventana.main(null);
+				frame.dispose();
+			}
+		});
+		btnAtrs.setBounds(166, 210, 89, 23);
+		frame.getContentPane().add(btnAtrs);
+	}
+}
+=====================================================================
+Found a 7 line (40 tokens) duplication in the following files: 
+Starting at line 52 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMotos.java
+Starting at line 52 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\PrincipalInterfaz.java
+
+		Vehiculos v = new Vehiculos(null,null,null,0,null,null,0,null,0,null,null);
+		frame = new JFrame();
+		frame.setBounds(100, 100, 450, 300);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JButton btnAltaCliente = new JButton("Alta Moto");
+=====================================================================
+Found a 17 line (40 tokens) duplication in the following files: 
+Starting at line 628 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+Starting at line 286 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Trabajos.java
+Starting at line 600 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+
+		            fis4.close();
+		            
+		            
+		        } 
+		        catch (IOException ioe) 
+		        {
+		            ioe.printStackTrace();
+		            return;
+		        } 
+		        catch (ClassNotFoundException c) 
+		        {
+		            System.out.println("Class not found");
+		            c.printStackTrace();
+		            return;
+		        }		         
+		
+}
+=====================================================================
+Found a 13 line (39 tokens) duplication in the following files: 
+Starting at line 252 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+Starting at line 277 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+Starting at line 302 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+
+				if(m.getDni().equalsIgnoreCase(dniCliente)) {
+					m.setNombre(nombre);
+					m.setApellido(apellido);
+					m.setCalle(calle);
+					m.setNumeroCasa(numeroCasa);
+					m.setCodigoPostal(codigoPostal);
+				}
+			}
+				}
+			}
+			break;
+			
+		case 2:
+=====================================================================
+Found a 7 line (38 tokens) duplication in the following files: 
+Starting at line 51 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionClientes.java
+Starting at line 52 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionCoches.java
+Starting at line 50 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionComercial.java
+Starting at line 52 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionFurgonetas.java
+Starting at line 51 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionJefes.java
+Starting at line 51 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMecanico.java
+Starting at line 52 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\PrincipalInterfaz.java
+
+		Personas p = new Personas(null,null,null,null,0,0);
+		frame = new JFrame();
+		frame.setBounds(100, 100, 450, 300);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JButton btnAltaCliente = new JButton("Alta cliente");
+=====================================================================
+Found a 11 line (38 tokens) duplication in the following files: 
+Starting at line 252 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+Starting at line 277 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+Starting at line 302 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+Starting at line 329 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+
+				if(m.getDni().equalsIgnoreCase(dniCliente)) {
+					m.setNombre(nombre);
+					m.setApellido(apellido);
+					m.setCalle(calle);
+					m.setNumeroCasa(numeroCasa);
+					m.setCodigoPostal(codigoPostal);
+				}
+			}
+				}
+			}
+			break;
+=====================================================================
+Found a 6 line (37 tokens) duplication in the following files: 
+Starting at line 52 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionClientes.java
+Starting at line 53 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionCoches.java
+Starting at line 51 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionComercial.java
+Starting at line 53 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionFurgonetas.java
+Starting at line 52 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionJefes.java
+Starting at line 52 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMecanico.java
+Starting at line 53 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMotos.java
+Starting at line 43 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionPersonas.java
+Starting at line 54 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionTrabajos.java
+Starting at line 54 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionTrabajosAlta.java
+Starting at line 43 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionVehiculos.java
+Starting at line 53 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\PrincipalInterfaz.java
+
+		frame = new JFrame();
+		frame.setBounds(100, 100, 450, 300);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JButton btnAltaCliente = new JButton("Alta cliente");
+=====================================================================
+Found a 3 line (37 tokens) duplication in the following files: 
+Starting at line 12 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Moto.java
+Starting at line 133 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+
+	public Moto(String matricula,String tipo,String dniCliente,int anyoEntradaTaller,String modelo, String marca, int capacidadMotor, String tipoCombustible, int numeroPasajeros,
+			String ABS,  String estadoVehiculo) {
+		super(matricula,tipo,dniCliente,anyoEntradaTaller,modelo, marca, capacidadMotor, tipoCombustible, numeroPasajeros, ABS, estadoVehiculo);
+=====================================================================
+Found a 7 line (36 tokens) duplication in the following files: 
+Starting at line 76 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionClientes.java
+Starting at line 77 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionCoches.java
+
+				p.modificar(1);
+			}
+		});
+		btnModificarCliente.setBounds(149, 56, 147, 23);
+		frame.getContentPane().add(btnModificarCliente);
+		
+		JButton btnBajaCliente = new JButton("Baja Cliente");
+=====================================================================
+Found a 7 line (36 tokens) duplication in the following files: 
+Starting at line 86 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionClientes.java
+Starting at line 87 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionCoches.java
+
+				p.baja(1);
+			}
+		});
+		btnBajaCliente.setBounds(306, 56, 118, 23);
+		frame.getContentPane().add(btnBajaCliente);
+		
+		JButton btnListarClientes = new JButton("Listar Clientes");
+=====================================================================
+Found a 7 line (36 tokens) duplication in the following files: 
+Starting at line 76 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionJefes.java
+Starting at line 77 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMotos.java
+
+				p.modificar(2);
+			}
+		});
+		btnModificarCliente.setBounds(149, 56, 118, 23);
+		frame.getContentPane().add(btnModificarCliente);
+		
+		JButton btnBajaCliente = new JButton("Baja Jefe");
+=====================================================================
+Found a 7 line (36 tokens) duplication in the following files: 
+Starting at line 86 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionJefes.java
+Starting at line 87 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMotos.java
+
+				p.baja(2);
+			}
+		});
+		btnBajaCliente.setBounds(282, 56, 118, 23);
+		frame.getContentPane().add(btnBajaCliente);
+		
+		JButton btnListarClientes = new JButton("Listar Jefes");
+=====================================================================
+Found a 16 line (36 tokens) duplication in the following files: 
+Starting at line 532 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+Starting at line 528 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+
+	            oos.writeObject(cliente);
+	            oos.close();
+	            fos.close();
+	        } 
+	        catch (IOException ioe) 
+	        {
+	            ioe.printStackTrace();
+	        }
+			
+			break;
+			
+		case 2:
+			
+			try
+	        {
+	            FileOutputStream fos = new FileOutputStream("jefes");
+=====================================================================
+Found a 13 line (36 tokens) duplication in the following files: 
+Starting at line 549 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+Starting at line 544 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+
+	            oos.writeObject(jefe);
+	            oos.close();
+	            fos.close();
+	        } 
+	        catch (IOException ioe) 
+	        {
+	            ioe.printStackTrace();
+	        }
+		break;
+		case 3:
+			try
+	        {
+	            FileOutputStream fos = new FileOutputStream("mecanicos");
+=====================================================================
+Found a 9 line (34 tokens) duplication in the following files: 
+Starting at line 61 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionClientes.java
+Starting at line 62 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionCoches.java
+Starting at line 63 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionTrabajosAlta.java
+
+				p.alta(1);
+			}
+		});
+		btnAltaCliente.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+			}
+		});
+		btnAltaCliente.setBounds(10, 56, 118, 23);
+=====================================================================
+Found a 2 line (33 tokens) duplication in the following files: 
+Starting at line 17 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Furgoneta.java
+Starting at line 12 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Moto.java
+Starting at line 133 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+
+	public Furgoneta(String matricula,String tipo,String dniCliente,int anyoEntradaTaller,String modelo, String marca, int capacidadMotor, String tipoCombustible, int numeroPasajeros,
+			String ABS,  String estadoVehiculo, int numeroPuertas, int capacidadAlmacenamiento, String GPS, String sistemaClimatizacion) {
+=====================================================================
+Found a 3 line (33 tokens) duplication in the following files: 
+Starting at line 176 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+Starting at line 289 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+
+		matricula = JOptionPane.showInputDialog(null, "Escriba la matricula del coche: ");
+		for(int i=0;i<coche.size();i++) {
+			if(coche.get(i).getMatricula().equals(matricula)) {
+=====================================================================
+Found a 3 line (33 tokens) duplication in the following files: 
+Starting at line 213 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+Starting at line 305 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+
+			matricula = JOptionPane.showInputDialog(null, "Escriba la matricula de la moto: ");
+			for(int i=0;i<moto.size();i++) {
+				if(moto.get(i).getMatricula().equals(matricula)) {
+=====================================================================
+Found a 3 line (33 tokens) duplication in the following files: 
+Starting at line 243 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+Starting at line 322 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+
+			matricula = JOptionPane.showInputDialog(null, "Escriba la matricula de la furgoneta: ");
+			for(int i=0;i<furgoneta.size();i++) {
+				if(furgoneta.get(i).getMatricula().equals(matricula)) {
+=====================================================================
+Found a 11 line (32 tokens) duplication in the following files: 
+Starting at line 20 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionClientes.java
+Starting at line 21 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionCoches.java
+Starting at line 20 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionComercial.java
+Starting at line 21 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionFurgonetas.java
+Starting at line 20 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionJefes.java
+Starting at line 20 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMecanico.java
+Starting at line 21 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMotos.java
+Starting at line 12 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionPersonas.java
+Starting at line 22 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionTrabajos.java
+Starting at line 22 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionTrabajosAlta.java
+Starting at line 12 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionVehiculos.java
+Starting at line 18 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\PrincipalInterfaz.java
+
+public class GestionClientes {
+
+	private JFrame frame;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+=====================================================================
+Found a 7 line (32 tokens) duplication in the following files: 
+Starting at line 76 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionClientes.java
+Starting at line 77 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionCoches.java
+Starting at line 76 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMecanico.java
+
+				p.modificar(1);
+			}
+		});
+		btnModificarCliente.setBounds(149, 56, 147, 23);
+		frame.getContentPane().add(btnModificarCliente);
+		
+		JButton btnBajaCliente = new JButton("Baja Cliente");
+=====================================================================
+Found a 7 line (32 tokens) duplication in the following files: 
+Starting at line 86 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionClientes.java
+Starting at line 87 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionCoches.java
+Starting at line 86 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMecanico.java
+
+				p.baja(1);
+			}
+		});
+		btnBajaCliente.setBounds(306, 56, 118, 23);
+		frame.getContentPane().add(btnBajaCliente);
+		
+		JButton btnListarClientes = new JButton("Listar Clientes");
+=====================================================================
+Found a 7 line (32 tokens) duplication in the following files: 
+Starting at line 77 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionFurgonetas.java
+Starting at line 81 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionTrabajos.java
+
+				v.modificar(3);
+			}
+		});
+		btnModificarCliente.setBounds(138, 56, 154, 23);
+		frame.getContentPane().add(btnModificarCliente);
+		
+		JButton btnBajaCliente = new JButton("Baja Furgoneta");
+=====================================================================
+Found a 7 line (32 tokens) duplication in the following files: 
+Starting at line 87 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionFurgonetas.java
+Starting at line 91 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionTrabajos.java
+
+				v.baja(3);
+			}
+		});
+		btnBajaCliente.setBounds(302, 56, 131, 23);
+		frame.getContentPane().add(btnBajaCliente);
+		
+		JButton btnListarClientes = new JButton("Listar Furgoneta");
+=====================================================================
+Found a 9 line (31 tokens) duplication in the following files: 
+Starting at line 43 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionClientes.java
+Starting at line 42 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionComercial.java
+Starting at line 43 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionJefes.java
+Starting at line 43 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMecanico.java
+Starting at line 42 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\PrincipalInterfaz.java
+
+	public GestionClientes() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		Personas p = new Personas(null,null,null,null,0,0);
+=====================================================================
+Found a 3 line (31 tokens) duplication in the following files: 
+Starting at line 145 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+Starting at line 351 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+
+			dni=JOptionPane.showInputDialog(null, "Escriba el dni del cliente: ");
+			for(int i=0;i<cliente.size();i++) {
+				if(cliente.get(i).getDni().equals(dni)) {
+=====================================================================
+Found a 3 line (31 tokens) duplication in the following files: 
+Starting at line 152 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+Starting at line 177 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+Starting at line 198 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+Starting at line 220 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+
+			calle=JOptionPane.showInputDialog(null, "Escriba la calle del cliente: ");
+			numeroCasa=Integer.parseInt(JOptionPane.showInputDialog(null, "Escriba el numero de casa: "));
+			codigoPostal=Integer.parseInt(JOptionPane.showInputDialog(null, "Indique el codigo postal: "));
+=====================================================================
+Found a 3 line (31 tokens) duplication in the following files: 
+Starting at line 168 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+Starting at line 364 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+
+			codigoJefe=(JOptionPane.showInputDialog(null, "Escriba el codigo del jefe: "));
+			for(int i=0;i<jefe.size();i++) {
+				if(jefe.get(i).getCodigoJefe().equals(codigoJefe)) {
+=====================================================================
+Found a 3 line (31 tokens) duplication in the following files: 
+Starting at line 189 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+Starting at line 376 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+
+			codigoMecanico=(JOptionPane.showInputDialog(null, "Escriba el codigo del mecanico: "));
+			for(int i=0;i<mecanico.size();i++) {
+				if(mecanico.get(i).getCodigoMecanico().equals(codigoMecanico)) {
+=====================================================================
+Found a 3 line (31 tokens) duplication in the following files: 
+Starting at line 211 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+Starting at line 389 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+
+			codigoComercial=(JOptionPane.showInputDialog(null, "Escriba el codigo del comercial: "));
+			for(int i=0;i<comercial.size();i++) {
+				if(comercial.get(i).getCodigoComercial().equals(codigoComercial)) {
+=====================================================================
+Found a 14 line (31 tokens) duplication in the following files: 
+Starting at line 517 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+Starting at line 513 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+
+			break;
+		}
+}
+@Override
+public void guardarHistorial(int opcion) throws IOException {
+	// TODO Auto-generated method stub
+		
+	switch(opcion) {
+		
+		case 1:
+			
+			try
+	        {
+	            FileOutputStream fos = new FileOutputStream("clientes");
+=====================================================================
+Found a 3 line (31 tokens) duplication in the following files: 
+Starting at line 112 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Trabajos.java
+Starting at line 136 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Trabajos.java
+Starting at line 160 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Trabajos.java
+Starting at line 211 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Trabajos.java
+
+				id = (JOptionPane.showInputDialog(null, "Escriba el id del trabajo: "));
+				for(int i=0;i<trabajo.size();i++) {
+					if(trabajo.get(i).getId().equals(id)) {
+=====================================================================
+Found a 3 line (31 tokens) duplication in the following files: 
+Starting at line 176 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+Starting at line 289 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+Starting at line 353 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+
+		matricula = JOptionPane.showInputDialog(null, "Escriba la matricula del coche: ");
+		for(int i=0;i<coche.size();i++) {
+			if(coche.get(i).getMatricula().equals(matricula)) {
+=====================================================================
+Found a 3 line (31 tokens) duplication in the following files: 
+Starting at line 213 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+Starting at line 305 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+Starting at line 367 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+
+			matricula = JOptionPane.showInputDialog(null, "Escriba la matricula de la moto: ");
+			for(int i=0;i<moto.size();i++) {
+				if(moto.get(i).getMatricula().equals(matricula)) {
+=====================================================================
+Found a 3 line (31 tokens) duplication in the following files: 
+Starting at line 243 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+Starting at line 322 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+Starting at line 382 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+
+			matricula = JOptionPane.showInputDialog(null, "Escriba la matricula de la furgoneta: ");
+			for(int i=0;i<furgoneta.size();i++) {
+				if(furgoneta.get(i).getMatricula().equals(matricula)) {
+=====================================================================
+Found a 7 line (30 tokens) duplication in the following files: 
+Starting at line 101 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionCoches.java
+Starting at line 99 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionComercial.java
+Starting at line 101 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionFurgonetas.java
+Starting at line 100 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionJefes.java
+Starting at line 100 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMecanico.java
+Starting at line 101 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMotos.java
+Starting at line 92 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionTrabajosAlta.java
+
+		frame.getContentPane().add(btnListarClientes);
+		
+		JButton btnGuardar = new JButton("Guardar");
+		btnGuardar.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				try {
+=====================================================================
+Found a 9 line (30 tokens) duplication in the following files: 
+Starting at line 60 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionComercial.java
+Starting at line 62 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionFurgonetas.java
+Starting at line 61 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionJefes.java
+Starting at line 61 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMecanico.java
+Starting at line 62 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMotos.java
+Starting at line 65 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionTrabajos.java
+Starting at line 63 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionTrabajosAlta.java
+
+				p.alta(4);
+			}
+		});
+		btnAltaCliente.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+			}
+		});
+		btnAltaCliente.setBounds(10, 56, 118, 23);
+=====================================================================
+Found a 2 line (29 tokens) duplication in the following files: 
+Starting at line 18 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Coche.java
+Starting at line 17 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Furgoneta.java
+Starting at line 12 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Moto.java
+Starting at line 133 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+
+	public Coche(String matricula,String tipo,String dniCliente,int anyoEntradaTaller,String modelo, String marca, int capacidadMotor, String tipoCombustible, int numeroPasajeros,
+			String aBS, String estadoVehiculo,  int numeroPuertas, int capacidadAlmacenamiento, String GPS, String sistemaClimatizacion, String descapotable) {
+=====================================================================
+Found a 13 line (28 tokens) duplication in the following files: 
+Starting at line 31 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionClientes.java
+Starting at line 32 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionCoches.java
+Starting at line 30 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionComercial.java
+Starting at line 32 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionFurgonetas.java
+Starting at line 31 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionJefes.java
+Starting at line 31 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMecanico.java
+Starting at line 32 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMotos.java
+Starting at line 23 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionPersonas.java
+Starting at line 33 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionTrabajos.java
+Starting at line 33 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionTrabajosAlta.java
+Starting at line 23 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionVehiculos.java
+Starting at line 30 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\PrincipalInterfaz.java
+
+					GestionClientes window = new GestionClientes();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public GestionClientes() {
+=====================================================================
+Found a 1 line (28 tokens) duplication in the following files: 
+Starting at line 52 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMotos.java
+Starting at line 51 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\PrincipalInterfaz.java
+
+		Vehiculos v = new Vehiculos(null,null,null,0,null,null,0,null,0,null,null);
+=====================================================================
+Found a 12 line (27 tokens) duplication in the following files: 
+Starting at line 587 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+Starting at line 272 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Trabajos.java
+
+		}
+
+}
+@SuppressWarnings("unchecked")
+@Override
+public void cargarHistorial() throws IOException, ClassNotFoundException {
+	// TODO Auto-generated method stub
+			
+		
+			 try
+		        {
+		            FileInputStream fis = new FileInputStream("clientes");
+=====================================================================
+Found a 1 line (27 tokens) duplication in the following files: 
+Starting at line 187 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+Starting at line 224 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+Starting at line 254 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+
+		tipo = (String) JOptionPane.showInputDialog(null, "Seleccione el motivo de la visita", "Motivo", JOptionPane.DEFAULT_OPTION,  null, motivos, motivos[0]);
+=====================================================================
+Found a 2 line (26 tokens) duplication in the following files: 
+Starting at line 18 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Furgoneta.java
+Starting at line 13 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Moto.java
+
+			String ABS,  String estadoVehiculo, int numeroPuertas, int capacidadAlmacenamiento, String GPS, String sistemaClimatizacion) {
+		super(matricula,tipo,dniCliente,anyoEntradaTaller,modelo, marca, capacidadMotor, tipoCombustible, numeroPasajeros, ABS, estadoVehiculo);
+=====================================================================
+Found a 12 line (26 tokens) duplication in the following files: 
+Starting at line 532 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+Starting at line 549 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+Starting at line 563 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+Starting at line 528 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+Starting at line 544 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+
+	            oos.writeObject(cliente);
+	            oos.close();
+	            fos.close();
+	        } 
+	        catch (IOException ioe) 
+	        {
+	            ioe.printStackTrace();
+	        }
+			
+			break;
+			
+		case 2:
+=====================================================================
+Found a 9 line (26 tokens) duplication in the following files: 
+Starting at line 50 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Trabajos.java
+Starting at line 70 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+
+	}
+	public String getMatricula() {
+		return matricula;
+	}
+	public void setMatricula(String matricula) {
+		this.matricula = matricula;
+	}
+	
+	public String getTipoTrabajo() {
+=====================================================================
+Found a 1 line (26 tokens) duplication in the following files: 
+Starting at line 202 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+Starting at line 267 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+
+		coche.add((new Coche(matricula, tipo,dniCliente, anyoEntradaTaller, modelo, marca, capacidadMotor, tipoCombustible, numeroPasajeros, ABS, estadoVehiculo, numeroPuertas, capacidadAlmacenamiento, GPS, sistemaClimatizacion, descapotable)));
+=====================================================================
+Found a 3 line (25 tokens) duplication in the following files: 
+Starting at line 118 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionClientes.java
+Starting at line 118 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionCoches.java
+Starting at line 116 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionComercial.java
+Starting at line 117 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionJefes.java
+Starting at line 117 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMecanico.java
+Starting at line 118 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMotos.java
+
+		JLabel lblGestionarCliente = new JLabel("GESTIONAR CLIENTE");
+		lblGestionarCliente.setFont(new Font("Sylfaen", Font.PLAIN, 15));
+		lblGestionarCliente.setBounds(138, 11, 157, 14);
+=====================================================================
+Found a 4 line (25 tokens) duplication in the following files: 
+Starting at line 124 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionClientes.java
+Starting at line 122 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionComercial.java
+Starting at line 123 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionJefes.java
+Starting at line 123 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMecanico.java
+Starting at line 63 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\PrincipalInterfaz.java
+
+		btnAtrs.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				GestionPersonas ventana = new GestionPersonas();
+=====================================================================
+Found a 8 line (25 tokens) duplication in the following files: 
+Starting at line 108 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionFurgonetas.java
+Starting at line 107 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMecanico.java
+
+					v.guardarHistorial(3);
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		});
+		btnGuardar.setBounds(69, 134, 118, 23);
+=====================================================================
+Found a 3 line (25 tokens) duplication in the following files: 
+Starting at line 118 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionFurgonetas.java
+Starting at line 109 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionTrabajosAlta.java
+
+		JLabel lblGestionarCliente = new JLabel("GESTIONAR FURGONETAS");
+		lblGestionarCliente.setFont(new Font("Sylfaen", Font.PLAIN, 15));
+		lblGestionarCliente.setBounds(110, 11, 203, 14);
+=====================================================================
+Found a 8 line (25 tokens) duplication in the following files: 
+Starting at line 107 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionJefes.java
+Starting at line 108 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\interfaz\GestionMotos.java
+
+					p.guardarHistorial(2);
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		});
+		btnGuardar.setBounds(33, 134, 118, 23);
+=====================================================================
+Found a 10 line (25 tokens) duplication in the following files: 
+Starting at line 532 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+Starting at line 549 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+Starting at line 563 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+Starting at line 528 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+Starting at line 544 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+Starting at line 559 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Vehiculos.java
+
+	            oos.writeObject(cliente);
+	            oos.close();
+	            fos.close();
+	        } 
+	        catch (IOException ioe) 
+	        {
+	            ioe.printStackTrace();
+	        }
+			
+			break;
+=====================================================================
+Found a 9 line (25 tokens) duplication in the following files: 
+Starting at line 579 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Personas.java
+Starting at line 265 of C:\Users\TipoDeIncognito\Desktop\Practica_final_BUENA\src\practica\Trabajos.java
+
+	            oos.writeObject(comercial);
+	            oos.close();
+	            fos.close();
+	        } 
+	        catch (IOException ioe) 
+	        {
+	            ioe.printStackTrace();
+	        }
+		}
